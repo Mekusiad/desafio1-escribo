@@ -8,7 +8,7 @@ function verifyNumber(number) {
   let sum = 0;
   const lessThan = [];
 
-  for (let i = 1; i < number; i++) {
+  for (let i = 0; i < number; i++) {
     if (i % 3 === 0 || i % 5 === 0) {
       sum += i;
       console.log(i);
@@ -17,7 +17,7 @@ function verifyNumber(number) {
   }
   sumNumbers.innerText = `A soma dos números divisíveis por 3 e 5 de ${number} é: ${sum}`;
   if (sum === 0) {
-    numbers.innerText = `O número ${number} não possui números divisíveis por 3 ou 5 `;
+    numbers.innerText = `O número ${number} não possui divisão por 3 ou 5 `;
   } else {
     numbers.innerText = `O números divisíveis por 3 e 5 são: ${lessThan.toString()}.`;
   }
@@ -25,7 +25,8 @@ function verifyNumber(number) {
 
 btn.addEventListener("click", () => {
   const numberValue = Number(number.value);
-  const isNumber = numberValue > 0;
+  console.log(numberValue);
+  const isNumber = numberValue >= 0;
   sumNumbers.innerText = "";
   numbers.innerText = "";
 
