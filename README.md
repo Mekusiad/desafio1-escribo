@@ -8,7 +8,8 @@
 
 Não é preciso instalar biblioteca, mas é necessário possuir uma extensão no seu editor de código para simular o projeto como o Live Server.
 
-Após isso, inserir o seguinte comando para copiar o clonar o repositório:
+Após isso, abra seu terminal e insira o seguinte comando para clonar o repositório:
+
 `$ git clone git@github.com:Mekusiad/desafio1-escribo.git`
 
-e pronto, agora basta apenas testar o programar em seu computador.
+e pronto, agora basta simular o projeto via extensão e testar o programa.
