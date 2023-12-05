@@ -15,11 +15,11 @@ function verifyNumber(number) {
       lessThan.push(i);
     }
   }
-  sumNumbers.innerText = `A soma dos números divisíveis por 3 e 5 de ${number} é: ${sum}`;
+  sumNumbers.innerText = `A soma dos números divisíveis por 3 ou 5 menores que ${number} é: ${sum}`;
   if (sum === 0) {
-    numbers.innerText = `O número ${number} não possui divisão por 3 ou 5 `;
+    numbers.innerText = `Os números menores que ${number} não possuem divisão por 3 ou 5 `;
   } else {
-    numbers.innerText = `O números divisíveis por 3 e 5 são: ${lessThan.toString()}.`;
+    numbers.innerText = `Os números divisíveis por 3 ou 5 até o ${number} são:  ${lessThan.toString()}.`;
   }
 }
 
