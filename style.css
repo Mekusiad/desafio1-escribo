@@ -74,13 +74,15 @@ button:hover {
 
 .container .container-answer {
   display: flex;
+  width: 100%;
+  max-width: 400px;
   flex-direction: column;
-  flex-wrap: wrap;
-  overflow: hidden;
 }
 
 .container .container-answer p {
-  margin-left: 1rem;
-  text-align: left;
+  display: flex;
+  width: 100%;
+  padding: 0 0.5rem;
   margin-top: 1rem;
+  overflow-y: auto;
 }

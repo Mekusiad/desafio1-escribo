@@ -16,15 +16,24 @@ function verifyNumber(number) {
     }
   }
   sumNumbers.innerText = `A soma dos números divisíveis por 3 e 5 de ${number} é: ${sum}`;
-  numbers.innerText = `O números divisíveis por 3 e 5 são: ${lessThan.toString()}.`;
+  if (sum === 0) {
+    numbers.innerText = `O número ${number} não possui números divisíveis por 3 ou 5 `;
+  } else {
+    numbers.innerText = `O números divisíveis por 3 e 5 são: ${lessThan.toString()}.`;
+  }
 }
 
 btn.addEventListener("click", () => {
-  const isNumber = number.value > 0;
+  const numberValue = Number(number.value);
+  const isNumber = numberValue > 0;
+  sumNumbers.innerText = "";
+  numbers.innerText = "";
 
   if (!isNumber) {
     alert(
-      `Desculpa, número inserido ${number.value} não é válido, tente novamente!`
+      `Desculpa, número inserido ${
+        number.value || ""
+      } não é válido ou é vazio, tente novamente!`
     );
     number.value = "";
     number.focus();
